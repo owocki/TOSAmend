@@ -12,3 +12,11 @@ This is the initial README for the TOSAmend project.     The manifesto of the pr
 
 1. Attain counsel for the project.  We need to know what exactly we need to be passing for the server such that " A reasonable person looking at the objective evidence (a rough approximation of the legal standard) would probably conclude that the company had agreed to your terms. "   / via http://owocki.com/2011/09/02/tosamend-the-easy-way-to-modify-web-service-terms-of-service-agreements/#comment-319173233
 1. 
+
+## Contact information
+
+1. Twitter: @TOSAmend
+1. Email: ksowocki [at] gmail [dot] com
+
+
+
