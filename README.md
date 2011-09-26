@@ -17,7 +17,7 @@ This is the initial README for the TOSAmend project.     The manifesto of the pr
 
 1. Twitter: <a href="http://www.twitter.com/TOSAmend">@TOSAmend</a>
 1. Facebook: <a href="http://www.facebook.com/TOSAmend">facebook.com/TOSAmend</a>
-1. Email: ksowocki [at] gmail [dot] com
+1. Email: <a href="http://groups.google.com/group/tosamend">http://groups.google.com/group/tosamend</a> / <a href='mailto:tosamend@googlegroups.com'>tosamend@googlegroups.com</a>
 
 
 
