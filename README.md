@@ -15,7 +15,8 @@ This is the initial README for the TOSAmend project.     The manifesto of the pr
 
 ## Contact information
 
-1. Twitter: @TOSAmend
+1. Twitter: <a href="http://www.twitter.com/TOSAmend">@TOSAmend</a>
+1. Facebook: <a href="http://www.facebook.com/TOSAmend">facebook.com/TOSAmend</a>
 1. Email: ksowocki [at] gmail [dot] com
 
 
