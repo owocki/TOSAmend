@@ -81,7 +81,7 @@ javascript:(
 							+'I reject the proposed terms and conditions and counteroffer that the standard consumer protection terms will apply. '
 							+'(via <a href="http://www.tosamend.com/?utm_source=bookmarklet">TOSAmend</a>) '
 							+'<input type="hidden" id="TOSAmended" name="TOSAmended" value="1"> '
-							+'<img src="'+postURL+'" style="width:1px; height:1px;"/>  ');
+							+'<img src="'+recordURL+'" style="width:1px; height:1px;"/>  ');
 						alert('TOS Amended')
 						}
 				}else{
