@@ -43,6 +43,8 @@ For more information, please visit http://www.TOSAmend.com/ForWebsites.php?utm_s
 Please and Thank You,
 Kevin Owocki
 http://www.TOSAmend.com/
+http://www.twitter.com/TOSAmend
+http://www.facebook.com/TOSAmend
 
 ";
 
@@ -50,7 +52,7 @@ http://www.TOSAmend.com/
 foreach($toEmailUsers as $toEmailUser){
 	$args = array(
 		'to' => $toEmailUser."@".$host,
-		'from' => "noreply@TOSAmend.com",
+		'from' => "reply@TOSAmend.com",
 		'subject' => $subject,
 		'message' => $body,
 	);
@@ -62,6 +64,9 @@ $args = array(
 	$url,
 	$ip,
 	$useragent,
+	$gender,
+	$email,
+	$name,
 );
 $message = implode(',',$args);
 syslog(LOG_INFO,$message);
