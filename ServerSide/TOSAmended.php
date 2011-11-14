@@ -20,12 +20,27 @@ $host = $data['host'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 
+//log statistics
+$args = array(
+	"TOSAMENDED",
+	$host,
+	$url,
+	$ip,
+	$useragent,
+	$gender,
+	$email,
+	$name,
+);
+$message = implode(',',$args);
+syslog(LOG_INFO,$message);
+
 //build email
 $toEmailUsers = array(
 	'sales',
 	'contact',
 	'support',
 	'info',
+	'legal',
 );
 
 $subject = "[TOSAmend] Visitor @ $ip has rejected your Terms of Service.";
@@ -50,26 +65,17 @@ http://www.facebook.com/TOSAmend
 
 //send email
 foreach($toEmailUsers as $toEmailUser){
-	$args = array(
-		'to' => $toEmailUser."@".$host,
-		'from' => "reply@TOSAmend.com",
-		'subject' => $subject,
-		'message' => $body,
-	);
+	$to[] = $toEmailUser."@".$host;
 }
-
-//log statistics
+$to = implode(',',$to);
 $args = array(
-	$host,
-	$url,
-	$ip,
-	$useragent,
-	$gender,
-	$email,
-	$name,
+    'to' => $to,
+    'from' => "kevin@TOSAmend.com",
+    'subject' => $subject,
+    'message' => $body,
 );
-$message = implode(',',$args);
-syslog(LOG_INFO,$message);
+sendMail($args);
 
+echo "OK";
 
 ?>
