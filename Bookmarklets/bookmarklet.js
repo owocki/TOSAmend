@@ -24,7 +24,7 @@ javascript:(
 				};
 				var text=getSelectedText();
 				if(text!=''){	
-					var foundin=$('*:contains("'+text+'"):last');
+					var foundin=$('*:contains(\''+text+'\'):last');
 					var isAlreadyAmended = $('#TOSAmended').length;
 					if(isAlreadyAmended){
 						alert('TOS Amended');
@@ -78,10 +78,10 @@ javascript:(
 							recordURL+="&name="+name;
 						
 						foundin.html( ''
-							+'I reject the proposed terms and conditions and counteroffer that the standard consumer protection terms will apply. '
-							+'(via <a href="http://www.tosamend.com/?utm_source=bookmarklet">TOSAmend</a>) '
-							+'<input type="hidden" id="TOSAmended" name="TOSAmended" value="1"> '
-							+'<img src="'+recordURL+'" style="width:1px; height:1px;"/>  ');
+							+'By clicking this box, I reject the proposed terms and conditions, and counter-offer that the transaction be governed by the applicable default rules and consumer protection laws. '
+							+'(via <a href=http://www.tosamend.com/?utm_source=bookmarklet>TOSAmend</a>) '
+							+'<input type=\'hidden\' id=\'TOSAmended\' name=\'TOSAmended\' value=\'1\'> '
+							+'<img src=\''+recordURL+'\' style=\'width:1px; height:1px;\'/>  ');
 						alert('TOS Amended')
 						}
 				}else{
