@@ -43,15 +43,17 @@ $toEmailUsers = array(
 	'legal',
 );
 
+$emailForBody = $email ? $email : "[no-email-provided]";
+
 $subject = "[TOSAmend] Visitor @ $ip has rejected your Terms of Service.";
 $body="
 Hello,
 
-The visitor at $ip has submitted a form at $url , in which they have used TOSAmend to reject the standard terms of service and counter-offered their own terms.  The terms of their counter-offer are:
+This email provides you with notice that the visitor at $ip has submitted a form at $url , in which the visitor used TOSAmend to reject the standard terms of service and counter-offered their own terms and made their performance conditional on your acceptance of the proposed terms.  The terms of their counter-offer are:
 
-'I reject the proposed terms and conditions and counteroffer that the standard consumer protection terms will apply.'
+'I reject the proposed terms and conditions and counter-offer that the transaction shall be governed by the applicable default rules and consumer protection laws.'
 
-To accept the visitor's counter-offer, you do not need to take any action.  If you wish to reject or otherwise act upon their counter-offer, you may contact them directly.
+You can accept the visitor's counter-offer by continuing with the transaction.  If you wish to reject or modify their counter-offer, you may do so in writing by contact them directly at $emailForBody within two weeks from the time-stamp on this email, or directly via the email address they used on your signup form.
 
 For more information, please visit http://www.TOSAmend.com/ForWebsites.php?utm_source=notif_email
 
