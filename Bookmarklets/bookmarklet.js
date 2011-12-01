@@ -14,21 +14,23 @@ javascript:(
 	)(window,document,'1.3.2',function($,L){
 	
 			function getSelectedText(){
-				if(window.getSelection){
-						return window.getSelection()
-					} else if(document.getSelection){
-						return document.getSelection()
+					if(document.getSelection){
+						return document.getSelection();
 					} else if(document.selection){
-						return document.selection.createRange().text
+						return document.selection.createRange().text;
+					} else 	if(window.getSelection){
+						return window.getSelection();
 					}
 				};
 				var text=getSelectedText();
 				if(text!=''){	
-					var foundin=$('*:contains(\''+text+'\'):last');
+					var foundin=$("*:contains('"+text+"'):visible:last");
 					var isAlreadyAmended = $('#TOSAmended').length;
+					console.log(isAlreadyAmended);
 					if(isAlreadyAmended){
 						alert('TOS Amended');
 					}else if(foundin && foundin.length>0){
+					console.log(foundin);
 					
 						
 						/* Record Demographic info for INFORMATIONAL purposes only. TOSAmend will NEVER sell your email address. */
@@ -77,11 +79,7 @@ javascript:(
 						if(name)
 							recordURL+='&name='+name;
 						
-						foundin.html( ''
-							+'By clicking this box, I reject the proposed terms and conditions, and counter-offer that the transaction be governed by the applicable default rules and consumer protection laws. '
-							+'(via <a href=http://www.tosamend.com/?utm_source=bookmarklet>TOSAmend</a>) '
-							+'<input type=\'hidden\' id=\'TOSAmended\' name=\'TOSAmended\' value=\'1\'> '
-							+'<img src=\''+recordURL+'\' style=\'width:1px; height:1px;\'/>  ');
+						foundin.html( 'By clicking this box, I reject the proposed terms and conditions, and counter-offer that the transaction be governed by the applicable default rules and consumer protection laws. (via <a href=http://www.tosamend.com/?utm_source=bookmarklet>TOSAmend</a>) <input type=\'hidden\' id=\'TOSAmended\' name=\'TOSAmended\' value=\'1\'> <img src=\''+recordURL+'\' style=\'width:1px; height:1px;\'/>  ');
 						alert('TOS Amended')
 						}
 				}else{
