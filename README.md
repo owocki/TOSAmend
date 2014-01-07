@@ -24,4 +24,6 @@ The manifesto of the project can be found at http://owocki.com/2011/09/02/tosame
 1. Email: <a href="http://groups.google.com/group/tosamend">http://groups.google.com/group/tosamend</a> / <a href='mailto:tosamend@googlegroups.com'>tosamend@googlegroups.com</a>
 
 
+<!-- Google Analytics --> 
+<img src='https://ga-beacon.appspot.com/UA-1014419-15/owocki/codesamples' style='width:1px; height:1px;' >
 
