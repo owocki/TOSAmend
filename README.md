@@ -25,5 +25,5 @@ The manifesto of the project can be found at http://owocki.com/2011/09/02/tosame
 
 
 <!-- Google Analytics --> 
-<img src='https://ga-beacon.appspot.com/UA-1014419-15/owocki/codesamples' style='width:1px; height:1px;' >
+<img src='https://ga-beacon.appspot.com/UA-1014419-15/owocki/TOSAmend' style='width:1px; height:1px;' >
 
