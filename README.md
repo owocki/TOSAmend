@@ -1,6 +1,6 @@
 # TOSAmend
 
-The manifesto of the project can be found at http://owocki.com/2011/09/02/tosamend-the-easy-way-to-modify-web-service-terms-of-service-agreements/
+The manifesto of the project can be found at httphttp://owocki.com/tosamend-the-easy-way-to-modify-web-service-terms-of-service-online-contracts/
 
 ##RELEASE NOTES v0.2 11/13/2011
 
